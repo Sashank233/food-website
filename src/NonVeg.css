@@ -1,0 +1,219 @@
+/* ===============================
+   GLOBAL BACKGROUND & TYPOGRAPHY
+================================= */
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #F4EDE4, #E7DED2);
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  color: #2C2A28;
+}
+
+/* ===============================
+   GRID LAYOUT
+================================= */
+
+.nonveg-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  padding: 50px 40px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* ===============================
+   CARD BASE STYLE
+================================= */
+
+.nonveg-card {
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fffdf9;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.07);
+  position: relative;
+}
+
+.nonveg-card:hover {
+  transform: translateY(-12px);
+  box-shadow:
+    0 20px 38px rgba(0,0,0,0.16),
+    0 0 0 1px rgba(212,175,55,0.35);
+}
+
+/* Gold luxury accent line */
+.nonveg-card::before {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, #D4AF37, transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ===============================
+   PREMIUM ITALIAN CARD THEMES
+================================= */
+
+.card-cream {
+  background: linear-gradient(145deg, #fffdf8, #f4ecdc);
+}
+
+.card-olive {
+  background: linear-gradient(145deg, #fafbf7, #edf0e6);
+}
+
+.card-wine {
+  background: linear-gradient(145deg, #fff8f6, #f1dfdc);
+}
+
+.card-terracotta {
+  background: linear-gradient(145deg, #fff7f2, #f0dad1);
+}
+
+.card-truffle {
+  background: linear-gradient(145deg, #f9f9f9, #ececec);
+}
+
+/* ===============================
+   IMAGE
+================================= */
+
+.nonveg-card img {
+  width: 100%;
+  height: 235px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease, filter 0.45s ease;
+  filter: contrast(95%) brightness(97%);
+}
+
+.nonveg-card:hover img {
+  transform: scale(1.07);
+  filter: contrast(105%) brightness(100%);
+}
+
+/* ===============================
+   TITLE
+================================= */
+
+.nonveg-card h3 {
+  margin: 18px 0 8px;
+  padding: 0 16px;
+  font-size: 22px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  letter-spacing: 0.6px;
+  color: #2B2B2B;
+}
+
+/* ===============================
+   DESCRIPTION
+================================= */
+
+.nonveg-desc {
+  font-size: 15px;
+  color: #5C5752;
+  line-height: 1.6;
+  padding: 0 22px;
+  text-align: center;
+  min-height: 65px;
+}
+
+/* ===============================
+   PRICE + BUTTON
+================================= */
+
+.nonveg-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+}
+
+/* PRICE */
+
+.nonveg-price {
+  font-weight: 600;
+  font-size: 20px;
+  color: #7B2D26;
+  letter-spacing: 0.6px;
+}
+
+/* BUTTON */
+
+.nonveg-btn {
+  background: #2F4F2F;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  width: 75%;
+}
+
+.nonveg-btn:hover {
+  background: #7B2D26;
+  letter-spacing: 1.4px;
+}
+.pagination button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #2F4F2F;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover */
+.pagination button:hover {
+  background: #7B2D26;
+  transform: translateY(-2px);
+}
+
+/* active page */
+.pagination button.active {
+  background: #D4AF37;
+  color: #2C2A28;
+  font-weight: bold;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+/* ===============================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 1100px) {
+  .nonveg-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .nonveg-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .nonveg-container {
+    grid-template-columns: 1fr;
+    padding: 25px;
+  }
+}

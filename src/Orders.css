@@ -1,0 +1,138 @@
+/* ========= GLOBAL PAGE ========= */
+.orders-page {
+  min-height: 100vh;
+  padding: 50px 20px;
+  background: linear-gradient(120deg,#e8e2d8,#f5f1e8);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* ========= TITLE ========= */
+.orders-title {
+  text-align: center;
+  font-size: 42px;
+  letter-spacing: 3px;
+  color: #caa64b;
+  margin-bottom: 40px;
+}
+
+/* ========= NO ORDERS ========= */
+.no-orders {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}
+
+/* ========= CONTAINER ========= */
+.orders-container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* ========= ORDER CARD ========= */
+.order-card {
+  background: #102542;
+  border-radius: 16px;
+  padding: 22px 24px;
+  border: 1px solid rgba(202,166,75,0.4);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+  transition: 0.25s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+/* ========= HEADER ========= */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(230,199,106,0.35);
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.order-date {
+  color: #d6dde6;
+  font-size: 15px;
+}
+
+.order-total {
+  color: #e6c76a;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* ========= ITEMS LIST ========= */
+.order-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ========= ITEM ROW ========= */
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  color: #f5f5f5;
+  font-size: 16px;
+}
+
+/* item name */
+.item-name {
+  font-family: 'Allura', cursive;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+}
+
+/* item details */
+.item-details {
+  color: #d6dde6;
+}
+/* ========= CLEAR ORDER BUTTON ========= */
+/* ===== CLEAR ORDER: ROYAL RED + IVORY ===== */
+/* ===== CLEAR ORDER: ROYAL GOLD + RED ===== */
+.clear-order-btn {
+  margin-top: 24px;
+  align-self: center;
+  padding: 12px 32px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: 'Cormorant Garamond', serif;
+
+  background: #e6c76a;      /* royal gold */
+  color: #7a0c0c;           /* deep royal red text */
+  border: 1px solid #7a0c0c;
+  border-radius: 30px;
+  cursor: pointer;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.25s ease;
+}
+
+.clear-order-btn:hover {
+  background: #7a0c0c;      /* royal red */
+  color: #f5e6c8;           /* soft gold/ivory text */
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+  transform: translateY(-2px);
+}
+/* ========= MOBILE ========= */
+@media (max-width: 600px) {
+
+  .orders-title {
+    font-size: 32px;
+  }
+
+  .order-card {
+    padding: 18px;
+  }
+
+  .item-name {
+    font-size: 18px;
+  }
+}

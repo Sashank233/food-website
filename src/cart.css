@@ -1,0 +1,264 @@
+/* ========= GOOGLE FONTS ========= */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@300;400;600&display=swap');
+
+/* ========= GLOBAL ========= */
+body {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background: linear-gradient(120deg,#e8e2d8,#f5f1e8);
+  color: #0b1a2f;
+}
+
+/* ========= PAGE LAYOUT ========= */
+.cart-page {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* ========= LEFT ========= */
+.cart-left h1 {
+  font-size: 44px;
+  color: #caa64b;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+/* ========= ITEM CARD ========= */
+.cart-item {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  gap: 18px;
+  padding: 22px;
+  margin-bottom: 18px;
+  background: #102542;
+  border-radius: 16px;
+  border: 1px solid rgba(202,166,75,0.4);
+}
+
+.cart-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* dish name */
+.cart-details strong {
+  font-family: 'Allura', cursive;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+/* text */
+.cart-details p {
+  color: #d6dde6;
+  margin: 4px 0;
+}
+
+/* subtotal */
+.subtotal {
+  color: #e6c76a;
+  font-weight: 600;
+}
+
+/* ========= CONTROLS ========= */
+.cart-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.qty-btn {
+  width: 32px;
+  height: 30px;
+  background: #1b365d;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.qty-btn:hover {
+  background: #274a7a;
+}
+
+.remove-btn {
+  border: 1px solid #e6c76a;
+  color: #e6c76a;
+  background: transparent;
+  padding: 6px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: rgba(230,199,106,0.15);
+}
+
+/* ========= RIGHT PANEL ========= */
+.cart-right {
+  background: #102542;
+  padding: 30px;
+  border-radius: 18px;
+  border: 1px solid rgba(202,166,75,0.4);
+  height: fit-content;
+  position: sticky;
+  top: 30px;
+  color: #ffffff;
+}
+
+/* summary title */
+.cart-right h3 {
+  color: #e6c76a;
+  margin-bottom: 14px;
+}
+
+/* summary rows */
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.summary-line span:last-child {
+  color: #e6c76a;
+  font-weight: 600;
+}
+
+/* divider */
+.cart-right hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin: 14px 0;
+}
+
+/* ========= DISCOUNT BUTTONS ========= */
+.discount-controls {
+  display: flex;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.discount-btn {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 30px;
+  border: 1px solid #e6c76a;
+  background: transparent;
+  color: #e6c76a;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.discount-btn:hover {
+  background: #e6c76a;
+  color: #102542;
+}
+
+/* ========= INPUT ========= */
+.coupon-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #e6c76a;
+  background: transparent;
+  color: white;
+}
+
+/* ========= BUTTONS ========= */
+.coupon-btn {
+  width: 100%;
+  margin-top: 12px;
+  background: linear-gradient(90deg,#e6c76a,#caa64b);
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  color: #102542;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cart-action-btn {
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #e6c76a;
+  background: transparent;
+  color: #e6c76a;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart-action-btn:hover {
+  background: rgba(230,199,106,0.15);
+}
+
+/* ========= CHECKOUT ========= */
+.checkout-btn {
+  width: 100%;
+  height: 48px;
+  margin-top: 16px;
+  background: linear-gradient(90deg,#e6c76a,#caa64b);
+  border: none;
+  border-radius: 8px;
+  color: #102542;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ========= PAYMENT ========= */
+.payment-methods {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-methods button {
+  padding: 10px;
+  background: #1b365d;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ========= QR ========= */
+.qr-wrapper {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.qr-wrapper h4 {
+  color: #e6c76a;
+}
+.check-Order {
+  width: 100%;
+  height: 48px;
+  margin-top: 10px;
+  background: linear-gradient(90deg,#e6c76a,#caa64b);
+  border: none;
+  border-radius: 8px;
+  color: #102542;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ========= MOBILE ========= */
+@media(max-width:900px){
+  .cart-page {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-right {
+    position: relative;
+    top: 0;
+  }
+}

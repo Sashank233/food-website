@@ -1,0 +1,68 @@
+/* Full screen container */
+.msg-container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Welcome box */
+.msg-card {
+  background: white;
+  padding: 40px 70px;
+  border-radius: 12px;
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.msg-card h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Buttons container */
+.msg-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Continue button */
+.continue-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.continue-btn:hover {
+  background: #43a047;
+}
+
+/* Logout button */
+.logout-btn {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.logout-btn:hover {
+  background: #d32f2f;
+}
