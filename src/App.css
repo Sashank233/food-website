@@ -51,6 +51,52 @@ border: 1px solid rgba(120, 98, 72, 0.25);
 
 z-index: 1000;
 }
+/* ===============================
+LOGOUT BUTTON
+================================= */
+
+.logout-btn{
+padding: 6px 16px;
+border-radius: 25px;
+
+font-size: 13px;
+font-weight: 600;
+letter-spacing: 1px;
+
+color: #fff;
+background: linear-gradient(135deg,#6B2E2E,#D4AF37);
+
+border: none;
+cursor: pointer;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+box-shadow:
+0 4px 12px rgba(0,0,0,0.2),
+inset 0 0 4px rgba(255,255,255,0.3);
+
+transition: all 0.3s ease;
+}
+
+/* hover effect */
+
+.logout-btn:hover{
+transform: translateY(-2px);
+background: linear-gradient(135deg,#7d3838,#e1b84a);
+box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* user section spacing */
+
+.user-section{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:14px;
+font-weight:500;
+}
 
 /* gold highlight line */
 
