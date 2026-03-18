@@ -100,42 +100,26 @@ totalPrice:finalAmount.toFixed(2),
 
 const handleCheckout = () => {
 
-  // ✅ Call function here
   const orderId = generateOrderId();
 
-  const templateParams = {
-    order_id: orderId,
-
-    orders: cartItems.map(item => ({
-      name: item.name,
-      price: (item.price * item.quantity).toFixed(2),
-      units: item.quantity
-    })),
-
-    cost: {
-      shipping: 50,
-      tax: gst.toFixed(2),
-      total: finalAmount.toFixed(2)
-    },
-
-    email: customerEmail
+  const orderDetails = {
+    id: orderId,
+    date: new Date().toLocaleString(),
+    items: [...cartItems],
+    totalPrice: finalAmount.toFixed(2),
   };
 
-  emailjs.send(
-    "service_2mj3eut",
-    "template_30lz10b",
-    templateParams,
-    "TMHNi62tLYmOzXGw1"
-  )
-  .then(() => alert(`mail sent successfully! Your order ID is ${orderId}`))
-  .catch((error) => {
-    console.error(error);
-    alert("Email sending failed");
-  });
+  // add order
+  dispatch(addOrder(orderDetails));
+
+  // clear carth
+  dispatch(clearCart());
+
+  // reset coupon
+  dispatch(resetCoupon());
+
+  toast.success("Order placed successfully!");
 };
-  
-
-
  return (
   <>
    <ToastContainer position="top-right" autoClose={2000}/>
@@ -223,13 +207,9 @@ const handleCheckout = () => {
 
         
           {/* Checkout */}
-          <button
-            className="checkout-btn"
-            onClick={() => {setCheckOut(true);
-            }}
-          >
-            Check-Out 💰
-          </button>
+          <button className="checkout-btn"onClick={() => {setCheckOut(true);}}>Check-Out 💰</button>
+          
+           
 
           {/* Payment options */}
           {checkOut && (
@@ -251,9 +231,12 @@ const handleCheckout = () => {
                 placeholder="enter your email"
               />
 
-              <button onClick={handleCheckout}>
-                Confirm Order
-              </button>
+            <button
+  className="checkout-btn"
+  onClick={handleCheckout}
+>
+  Check-Out 💰
+</button>
             </div>
           )}
 
@@ -269,11 +252,11 @@ const handleCheckout = () => {
               />
             </div>
           )}
-             <button className="check-Order"
+             {/* <button className="check-Order"
           onClick={()=> dispatch(addOrder(purchaseDetailes))}
           >
           check-order
-          </button>
+          </button> */}
         </div>
 
       </div>
