@@ -1,118 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Italianno&display=swap');
+
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #f5f2ed;
-  color: #1e1e1e;
+margin: 0;
+padding: 0;
+background-color: #000000;
+color: #f5f5f5;
 }
 
 /* Main Container */
 .home {
-  font-family: "Cormorant Garamond", serif;
-  font-style: italic;
-  line-height: 1.7;
+font-family: "Cormorant Garamond", serif;
+font-style: italic;
+line-height: 1.7;
+background-color: #000000; /* ensure no light background */
 }
 
 /* HERO SECTION */
 .hero {
-  text-align: center;
-  padding: 120px 20px;
-  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-              url('/hero.jpg') center/cover no-repeat;
-  color: #f8f6f2;
+text-align: center;
+padding: 120px 20px;
+background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+url('/hero.jpg') center/cover no-repeat;
+color: #f8f6f2;
 }
 
 .hero h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 3.5rem;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  font-style: italic;
+font-family: "Playfair Display", serif;
+font-size: 3.5rem;
+letter-spacing: 2px;
+margin-bottom: 20px;
+font-style: italic;
 }
 
 .hero p {
-  max-width: 650px;
-  margin: auto;
-  font-size: 1.2rem;
-  opacity: 0.9;
+max-width: 650px;
+margin: auto;
+font-size: 1.2rem;
+opacity: 0.9;
 }
 
 /* IMAGE STRIP */
 .image-strip {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+display: grid;
+grid-template-columns: repeat(3, 1fr);
 }
 
 .image-strip img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  filter: contrast(95%) brightness(95%);
-  transition: transform 0.4s ease, filter 0.4s ease;
+width: 100%;
+height: 260px;
+object-fit: cover;
+filter: contrast(95%) brightness(85%);
+transition: transform 0.4s ease, filter 0.4s ease;
 }
 
 .image-strip img:hover {
-  transform: scale(1.05);
-  filter: contrast(110%) brightness(100%);
+transform: scale(1.05);
+filter: contrast(110%) brightness(95%);
 }
 
 /* HISTORY & CULTURE SECTIONS */
 .history,
 .culture {
-  max-width: 900px;
-  margin: 80px auto;
-  padding: 0 20px;
-  text-align: center;
+max-width: 900px;
+margin: 80px auto;
+padding: 40px 20px;
+text-align: center;
+
+background-color: #000000; /* dark background */
+color: #f5f5f5; /* light text */
 }
 
 .history h2,
 .culture h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 2.2rem;
-  margin-bottom: 25px;
-  letter-spacing: 1px;
-  position: relative;
+font-family: "Playfair Display", serif;
+font-size: 2.2rem;
+margin-bottom: 25px;
+letter-spacing: 1px;
+position: relative;
+color: #ffffff;
 }
 
 .history h2::after,
 .culture h2::after {
-  content: "";
-  width: 60px;
-  height: 1px;
-  background: #b89b72;
-  display: block;
-  margin: 12px auto 0;
+content: "";
+width: 60px;
+height: 1px;
+background: #b89b72;
+display: block;
+margin: 12px auto 0;
 }
 
 .history p,
 .culture p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
+font-size: 1.1rem;
+margin-bottom: 20px;
+color: #dcdcdc;
 }
 
 /* Elegant Divider */
 .history {
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-  padding-bottom: 60px;
+border-bottom: 1px solid rgba(255,255,255,0.1);
+padding-bottom: 60px;
 }
 
-/* Subtle gold accent for luxury feel */
+/* Selection */
 ::selection {
-  background: #b89b72;
-  color: white;
+background: #b89b72;
+color: white;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.3rem;
-  }
+.hero h1 {
+font-size: 2.3rem;
+}
 
-  .image-strip {
-    grid-template-columns: 1fr;
-  }
+.image-strip {
+grid-template-columns: 1fr;
+}
 
-  .image-strip img {
-    height: 200px;
-  }
+.image-strip img {
+height: 200px;
+}
 }

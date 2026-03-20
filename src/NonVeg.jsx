@@ -56,7 +56,7 @@ const nonVegItems = [
   }
 ];
 let dispatch = useDispatch();
- const itemsPerPage=4;
+ const itemsPerPage=8;
   const totalPages = Math.ceil(nonVegItems.length/itemsPerPage);
   const [currentPage,setCurrentPage] = useState(1);
  const indexOfLastItem = currentPage * itemsPerPage;

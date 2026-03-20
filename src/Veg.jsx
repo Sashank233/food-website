@@ -56,7 +56,7 @@ function Veg() {
     desc: "Creamy Italian rice cooked slowly with mushrooms, garlic, butter and parmesan cheese."
   }
 ];
-  const itemsPerPage=4;
+  const itemsPerPage=8;
   const totalPages = Math.ceil(vegItems.length/itemsPerPage);
   const [currentPage,setCurrentPage] = useState(1);
  const indexOfLastItem = currentPage * itemsPerPage;
