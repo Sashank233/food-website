@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cormorant+Garamond&family=Allura&display=swap');
+
 /* ========= GLOBAL PAGE ========= */
 .orders-page {
   min-height: 100vh;
   padding: 50px 20px;
-  background: linear-gradient(120deg,#e8e2d8,#f5f1e8);
+
+  background:
+    radial-gradient(circle at top, rgba(184,155,114,0.15), transparent 60%),
+    radial-gradient(circle at bottom, rgba(255,255,255,0.05), transparent 70%),
+    #000;
+
   font-family: 'Cormorant Garamond', serif;
+  color: #f5f5f5;
 }
 
 /* ========= TITLE ========= */
@@ -11,7 +19,7 @@
   text-align: center;
   font-size: 42px;
   letter-spacing: 3px;
-  color: #caa64b;
+  color: #b89b72;
   margin-bottom: 40px;
 }
 
@@ -19,7 +27,7 @@
 .no-orders {
   text-align: center;
   font-size: 18px;
-  color: #555;
+  color: #cfcfcf;
 }
 
 /* ========= CONTAINER ========= */
@@ -33,17 +41,21 @@
 
 /* ========= ORDER CARD ========= */
 .order-card {
-  background: #102542;
+  background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
   border-radius: 16px;
   padding: 22px 24px;
-  border: 1px solid rgba(202,166,75,0.4);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+
   transition: 0.25s ease;
 }
 
 .order-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+  transform: translateY(-4px);
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.8),
+    0 0 0 1px rgba(184,155,114,0.35);
 }
 
 /* ========= HEADER ========= */
@@ -51,18 +63,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(230,199,106,0.35);
+
+  border-bottom: 1px solid rgba(184,155,114,0.3);
   padding-bottom: 8px;
   margin-bottom: 12px;
 }
 
 .order-date {
-  color: #d6dde6;
+  color: #cfcfcf;
   font-size: 15px;
 }
 
 .order-total {
-  color: #e6c76a;
+  color: #b89b72;
   font-weight: 600;
   font-size: 18px;
 }
@@ -83,44 +96,45 @@
   font-size: 16px;
 }
 
-/* item name */
+/* ITEM NAME */
 .item-name {
   font-family: 'Allura', cursive;
   font-size: 22px;
   letter-spacing: 0.5px;
 }
 
-/* item details */
+/* ITEM DETAILS */
 .item-details {
-  color: #d6dde6;
+  color: #cfcfcf;
 }
+
 /* ========= CLEAR ORDER BUTTON ========= */
-/* ===== CLEAR ORDER: ROYAL RED + IVORY ===== */
-/* ===== CLEAR ORDER: ROYAL GOLD + RED ===== */
 .clear-order-btn {
   margin-top: 24px;
   align-self: center;
   padding: 12px 32px;
+
   font-size: 16px;
   letter-spacing: 1px;
   font-family: 'Cormorant Garamond', serif;
 
-  background: #e6c76a;      /* royal gold */
-  color: #7a0c0c;           /* deep royal red text */
-  border: 1px solid #7a0c0c;
+  background: transparent;
+  color: #b89b72;
+  border: 1px solid #b89b72;
   border-radius: 30px;
-  cursor: pointer;
 
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  cursor: pointer;
   transition: all 0.25s ease;
 }
 
+/* HOVER */
 .clear-order-btn:hover {
-  background: #7a0c0c;      /* royal red */
-  color: #f5e6c8;           /* soft gold/ivory text */
-  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+  background: #b89b72;
+  color: #000;
   transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(184,155,114,0.5);
 }
+
 /* ========= MOBILE ========= */
 @media (max-width: 600px) {
 
