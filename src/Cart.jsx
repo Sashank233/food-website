@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { clearCart, removeCart, incrementQty, decrementQty } from "./addToCart";
-import { applyCoupon, resetCoupon } from "./CouponSlice";
+import { applyCoupon, resetCoupon } from "./couponSlice";
 import { QRCode } from "react-qr-code";
 import emailjs from "@emailjs/browser";
 import { addOrder } from "./OderSlice";
