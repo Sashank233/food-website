@@ -54,7 +54,56 @@ function Veg() {
     price: 289,
     image: "./veg-8.jpg",
     desc: "Creamy Italian rice cooked slowly with mushrooms, garlic, butter and parmesan cheese."
-  }
+  },
+  {
+  name: "Spinach Ricotta Ravioli",
+  price: 289,
+  image: "./veg-9.jpg",
+  desc: "Soft pasta pockets stuffed with spinach & ricotta cheese, served in a creamy tomato or butter sauce."
+},
+{
+  name: "Penne Arrabbiata",
+  price: 259,
+  image: "./veg-10.jpg",
+  desc: "Penne pasta cooked in a spicy tomato sauce with garlic, red chili flakes and olive oil."
+},
+{
+  name: "Four Cheese Pizza",
+  price: 299,
+  image: "./veg-11.jpg",
+  desc: "Rich pizza topped with mozzarella, cheddar, parmesan and gouda for an indulgent cheesy experience."
+},
+{
+  name: "Vegetable Calzone",
+  price: 269,
+  image: "./veg-12.jpg",
+  desc: "Folded pizza stuffed with vegetables, cheese and herbs, baked until golden and crispy."
+},
+{
+  name: "Eggplant Parmigiana",
+  price: 279,
+  image: "./veg-13.jpg",
+  desc: "Layers of fried eggplant, tomato sauce and melted cheese baked to perfection."
+},
+{
+  name: "Fettuccine Pesto",
+  price: 269,
+  image: "./veg-14.jpg",
+  desc: "Flat pasta tossed in fresh basil pesto sauce with garlic, olive oil and parmesan cheese."
+},
+{
+  name: "Gnocchi Pomodoro",
+  price: 279,
+  image: "./veg-15.jpg",
+  desc: "Soft potato dumplings served in a fresh tomato basil sauce with a hint of olive oil."
+},
+{
+  name: "Zucchini Fritters",
+  price: 199,
+  image: "./veg-16.jpg",
+  desc: "Crispy pan-fried zucchini patties served with a light herb dip, perfect as a starter."
+}
+  
 ];
   const itemsPerPage=8;
   const totalPages = Math.ceil(vegItems.length/itemsPerPage);

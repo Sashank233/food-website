@@ -53,7 +53,55 @@ const nonVegItems = [
     price: 449,
     image: "./nonveg-9.jpg",
     desc: "Creamy Italian arborio rice cooked with prawns and seafood, finished with parmesan and fresh herbs."
-  }
+  },
+  {
+  name: "Chicken Bruschetta",
+  price: 279,
+  image: "./nonveg-10.jpg",
+  desc: "Grilled chicken served on toasted bread with fresh tomatoes, basil and olive oil."
+},
+{
+  name: "BBQ Chicken Wings",
+  price: 319,
+  image: "./nonveg-11.jpg",
+  desc: "Juicy chicken wings glazed with smoky BBQ sauce and grilled to a sticky perfection."
+},
+{
+  name: "Fish Fingers",
+  price: 299,
+  image: "./nonveg-12.jpg",
+  desc: "Crispy golden fish strips coated in breadcrumbs, served with tartar sauce."
+},
+{
+  name: "Chicken Meatballs",
+  price: 289,
+  image: "./nonveg-13.jpg",
+  desc: "Tender chicken meatballs simmered in rich tomato sauce with Italian herbs."
+},
+{
+  name: "Prawn Cocktail",
+  price: 349,
+  image: "./nonveg-14.jpg",
+  desc: "Classic European starter with chilled prawns served in a creamy cocktail sauce."
+},
+{
+  name: "Chicken Sausage Platter",
+  price: 329,
+  image: "./nonveg-15.jpg",
+  desc: "Grilled chicken sausages served with sautéed vegetables and mustard dip."
+},
+{
+  name: "Calamari Rings",
+  price: 379,
+  image: "./nonveg-16.jpg",
+  desc: "Lightly battered squid rings fried crispy and served with garlic aioli."
+},
+{
+  name: "Chicken Croquettes",
+  price: 269,
+  image: "./nonveg-17.jpg",
+  desc: "Crispy fried rolls filled with creamy chicken mixture, inspired by European street food."
+}
 ];
 let dispatch = useDispatch();
  const itemsPerPage=8;
