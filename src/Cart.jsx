@@ -7,7 +7,7 @@ import emailjs from "@emailjs/browser";
 import { addOrder } from "./OderSlice";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./Cart.css";
+import "./cart.css";
 
 function Cart() {
   const dispatch = useDispatch();
