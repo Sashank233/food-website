@@ -1,84 +1,115 @@
-/* FULL SCREEN PAGE */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cormorant+Garamond&display=swap');
 
-.login-page{
-    position: fixed;
-    top: 0;
-    left: 0;
+/* ===============================
+   FULL SCREEN PAGE
+================================= */
 
-    width: 100vw;
-    height: 100vh;
+.login-page {
+  position: fixed;
+  top: 0;
+  left: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100vw;
+  height: 100vh;
 
-    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    radial-gradient(circle at top, rgba(184,155,114,0.15), transparent 60%),
+    radial-gradient(circle at bottom, rgba(255,255,255,0.05), transparent 70%),
+    #000;
 }
 
+/* ===============================
+   LOGIN CARD (GLASS DARK)
+================================= */
 
-/* LOGIN CARD */
+.login-box {
+  width: 350px;
+  padding: 40px;
 
-.login-box{
-    width: 350px;
-    padding: 40px;
+  background: rgba(15,15,15,0.85);
+  backdrop-filter: blur(16px);
 
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
+  border-radius: 15px;
 
-    border-radius: 15px;
+  border: 1px solid rgba(184,155,114,0.4);
 
-    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  box-shadow:
+    0 0 25px rgba(184,155,114,0.25),
+    0 20px 50px rgba(0,0,0,0.8);
 
-    color: white;
+  color: #f5f5f5;
 }
 
+/* ===============================
+   TITLE
+================================= */
 
-/* TITLE */
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
 
-.login-box h2{
-    text-align:center;
-    margin-bottom:25px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  color: #b89b72;
 }
 
+/* ===============================
+   INPUT
+================================= */
 
-/* INPUT */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
 
-.login-box input{
-    width:100%;
-    padding:12px;
-    margin-bottom:15px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.15);
 
-    border:none;
-    border-radius:8px;
+  background: rgba(255,255,255,0.05);
+  color: white;
 
-    background:rgba(255,255,255,0.2);
-    color:white;
-    outline:none;
+  outline: none;
+  transition: 0.3s;
 }
 
-.login-box input::placeholder{
-    color:#ddd;
+/* PLACEHOLDER */
+.login-box input::placeholder {
+  color: #aaa;
 }
 
-
-/* BUTTON */
-
-.login-box button{
-    width:100%;
-    padding:12px;
-
-    border:none;
-    border-radius:8px;
-
-    background:#ffb400;
-    color:black;
-
-    font-weight:bold;
-    cursor:pointer;
-
-    transition:0.3s;
+/* FOCUS */
+.login-box input:focus {
+  border-color: #b89b72;
+  box-shadow: 0 0 10px rgba(184,155,114,0.6);
+  background: rgba(255,255,255,0.08);
 }
 
-.login-box button:hover{
-    background:#ffa000;
+/* ===============================
+   BUTTON
+================================= */
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: linear-gradient(90deg, #b89b72, #d4af37);
+  color: #000;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* HOVER */
+.login-box button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(184,155,114,0.6);
 }

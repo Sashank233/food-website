@@ -6,46 +6,71 @@ function Home() {
     <div className="home">
 
       <header className="hero">
-        <h1>Welcome to Italian Flavors</h1>
-        <p>
-          Experience the soul of Italy through timeless recipes,
-          fresh ingredients, and culinary traditions passed down for generations.
-        </p>
+
+        <video
+          className="bg-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/food.mp4" type="video/mp4" />
+        </video>
+
+        <div className="overlay"></div>
+
+        <div className="hero-content">
+          <h1>Welcome to Italian Flavors</h1>
+          <p>
+            Experience the soul of Italy through timeless recipes,
+            fresh ingredients, and culinary traditions passed down for generations.
+          </p>
+        </div>
+
       </header>
+      <section className="italian-intro">
+  <p>
+    Italian cuisine is a celebration of simplicity, where fresh ingredients and time-honored techniques come together to create unforgettable flavors. 
+    From rustic countryside dishes to refined classics, every meal tells a story of tradition, passion, and authenticity.
+  </p>
+</section>
 
-      {/* Image Showcase */}
-      <section className="image-strip">
-        <img src="/pasta.jpg" alt="Italian pasta" />
-        <img src="/pizza.jpg" alt="Italian pizza" />
-        <img src="/hotel.jpg" alt="Italian dining table" />
-      </section>
+      {/* IMAGE GRID SECTION */}
+     <section className="image-train">
+  <div className="train-track">
 
-      {/* History Section */}
-      <section className="history">
-        <h2>The Story of Italian Cuisine</h2>
-        <p>
-          Italian cuisine dates back over 2,000 years, shaped by Roman traditions,
-          regional agriculture, and Mediterranean influences. From the olive groves
-          of Tuscany to the coastal seafood of Sicily, each region contributes its
-          own flavors and techniques.
-        </p>
-        <p>
-          Authentic Italian cooking celebrates simplicity — fresh tomatoes, basil,
-          olive oil, artisan cheeses, and handmade pasta come together to create
-          dishes loved across the world.
-        </p>
-      </section>
+    <img src="/veg-1.jpg" alt="" />
+    <img src="/veg-2.jpg" alt="" />
+   <img src="/bev-1.jpg" alt="" />
 
-      {/* Culture Section */}
-      <section className="culture">
-        <h2>More Than Food — A Way of Life</h2>
-        <p>
-          In Italy, meals are moments of connection. Families gather around the table,
-          recipes are treasured heirlooms, and every dish tells a story of heritage,
-          passion, and hospitality.
-        </p>
-      </section>
+    <img src="/nonveg-7.jpg" alt="" />
+    <img src="/NonVeg-2.jpg" alt="" />
+    <img src="/NonVeg-3.jpg" alt="" />
 
+    <img src="/diary-1.jpg" alt="" />
+    <img src="/diary-2.jpg" alt="" />
+    <img src="/diary-3.jpg" alt="" />
+
+    {/* duplicate for smooth loop */}
+    <img src="/desert-1.jpg" alt="" />
+    <img src="/desert-2.jpg" alt="" />
+    <img src="/desert-3.jpg" alt="" />
+
+    <img src="/bev-1.jpg" alt="" />
+    <img src="/bev-2.jpg" alt="" />
+    <img src="/bev-3.jpg" alt="" />
+
+  </div>
+</section>
+{/* FOOTER */}
+<footer className="food-footer">
+  <p>
+    Food is more than nourishment — it is a language of love, a bridge between cultures, and a memory we carry with every bite.  
+    In every aroma and flavor lies a story waiting to be discovered, shared, and cherished.  
+    From simple ingredients to extraordinary experiences, food brings people together in the most beautiful way.  
+    Taste slowly, savor deeply, and let every meal become a moment worth remembering.
+  </p>
+</footer>
     </div>
   )
 }

@@ -1,4 +1,9 @@
-/* Full screen container */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cormorant+Garamond&display=swap');
+
+/* ===============================
+   FULL SCREEN CONTAINER
+================================= */
+
 .msg-container {
   width: 100vw;
   height: 100vh;
@@ -7,62 +12,102 @@
   justify-content: center;
   align-items: center;
 
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  background:
+    radial-gradient(circle at top, rgba(184,155,114,0.15), transparent 60%),
+    radial-gradient(circle at bottom, rgba(255,255,255,0.05), transparent 70%),
+    #000;
 
   position: fixed;
   top: 0;
   left: 0;
 }
 
-/* Welcome box */
+/* ===============================
+   MESSAGE CARD
+================================= */
+
 .msg-card {
-  background: white;
-  padding: 40px 70px;
-  border-radius: 12px;
+  background: rgba(15,15,15,0.9);
+  padding: 45px 70px;
+  border-radius: 16px;
   text-align: center;
 
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border: 1px solid rgba(184,155,114,0.4);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 0 25px rgba(184,155,114,0.25),
+    0 20px 50px rgba(0,0,0,0.8);
+
+  color: #f5f5f5;
 }
 
-/* Title */
+/* ===============================
+   TITLE
+================================= */
+
 .msg-card h2 {
   margin-bottom: 25px;
-  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  color: #b89b72;
+  letter-spacing: 1.5px;
 }
 
-/* Buttons container */
+/* ===============================
+   BUTTONS CONTAINER
+================================= */
+
 .msg-buttons {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
 
-/* Continue button */
+/* ===============================
+   CONTINUE BUTTON
+================================= */
+
 .continue-btn {
-  background: #4CAF50;
-  color: white;
+  background: linear-gradient(90deg, #b89b72, #d4af37);
+  color: #000;
+
   border: none;
   padding: 10px 25px;
   border-radius: 6px;
+
   cursor: pointer;
   font-size: 15px;
+  font-weight: 600;
+
+  transition: 0.3s;
 }
 
 .continue-btn:hover {
-  background: #43a047;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(184,155,114,0.6);
 }
 
-/* Logout button */
+/* ===============================
+   LOGOUT BUTTON
+================================= */
+
 .logout-btn {
-  background: #f44336;
-  color: white;
-  border: none;
+  background: transparent;
+  color: #b89b72;
+
+  border: 1px solid #b89b72;
   padding: 10px 25px;
   border-radius: 6px;
+
   cursor: pointer;
   font-size: 15px;
+
+  transition: 0.3s;
 }
 
 .logout-btn:hover {
-  background: #d32f2f;
+  background: #b89b72;
+  color: #000;
 }

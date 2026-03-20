@@ -1,17 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Cormorant+Garamond&display=swap');
+
 /* ===============================
-   GLOBAL BACKGROUND & TYPOGRAPHY
+   GLOBAL
 ================================= */
 
 body {
   margin: 0;
-  background: linear-gradient(135deg, #F4EDE4, #E7DED2);
+  background: #000;
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
-  color: #2C2A28;
+  color: #f5f5f5;
 }
 
 /* ===============================
-   GRID LAYOUT
+   GRID
 ================================= */
 
 .nonveg-container {
@@ -24,7 +26,7 @@ body {
 }
 
 /* ===============================
-   CARD BASE STYLE
+   CARD BASE (DARK LUXURY)
 ================================= */
 
 .nonveg-card {
@@ -34,51 +36,43 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #fffdf9;
-  box-shadow: 0 10px 22px rgba(0,0,0,0.07);
+
+  background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
   position: relative;
+
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.6);
 }
 
-.nonveg-card:hover {
-  transform: translateY(-12px);
-  box-shadow:
-    0 20px 38px rgba(0,0,0,0.16),
-    0 0 0 1px rgba(212,175,55,0.35);
-}
-
-/* Gold luxury accent line */
+/* GOLD LINE */
 .nonveg-card::before {
   content: "";
-  height: 3px;
+  height: 2px;
   width: 100%;
-  background: linear-gradient(to right, #D4AF37, transparent);
+  background: linear-gradient(to right, #b89b72, transparent);
   position: absolute;
   top: 0;
   left: 0;
 }
 
+/* HOVER */
+.nonveg-card:hover {
+  transform: translateY(-12px);
+  box-shadow:
+    0 25px 50px rgba(0,0,0,0.8),
+    0 0 0 1px rgba(184,155,114,0.4);
+}
+
 /* ===============================
-   PREMIUM ITALIAN CARD THEMES
+   REMOVE LIGHT THEMES
 ================================= */
 
-.card-cream {
-  background: linear-gradient(145deg, #fffdf8, #f4ecdc);
-}
-
-.card-olive {
-  background: linear-gradient(145deg, #fafbf7, #edf0e6);
-}
-
-.card-wine {
-  background: linear-gradient(145deg, #fff8f6, #f1dfdc);
-}
-
-.card-terracotta {
-  background: linear-gradient(145deg, #fff7f2, #f0dad1);
-}
-
+.card-cream,
+.card-olive,
+.card-wine,
+.card-terracotta,
 .card-truffle {
-  background: linear-gradient(145deg, #f9f9f9, #ececec);
+  background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
 }
 
 /* ===============================
@@ -89,14 +83,14 @@ body {
   width: 100%;
   height: 235px;
   object-fit: cover;
-  display: block;
+
+  filter: brightness(80%) contrast(105%);
   transition: transform 0.45s ease, filter 0.45s ease;
-  filter: contrast(95%) brightness(97%);
 }
 
 .nonveg-card:hover img {
-  transform: scale(1.07);
-  filter: contrast(105%) brightness(100%);
+  transform: scale(1.08);
+  filter: brightness(95%) contrast(110%);
 }
 
 /* ===============================
@@ -109,9 +103,8 @@ body {
   font-size: 22px;
   text-align: center;
   font-family: "Playfair Display", serif;
-  font-style: italic;
   letter-spacing: 0.6px;
-  color: #2B2B2B;
+  color: #f8f6f2;
 }
 
 /* ===============================
@@ -120,7 +113,7 @@ body {
 
 .nonveg-desc {
   font-size: 15px;
-  color: #5C5752;
+  color: #cfcfcf;
   line-height: 1.6;
   padding: 0 22px;
   text-align: center;
@@ -128,7 +121,7 @@ body {
 }
 
 /* ===============================
-   PRICE + BUTTON
+   BOTTOM
 ================================= */
 
 .nonveg-bottom {
@@ -139,21 +132,25 @@ body {
   padding: 20px;
 }
 
-/* PRICE */
+/* ===============================
+   PRICE
+================================= */
 
 .nonveg-price {
   font-weight: 600;
   font-size: 20px;
-  color: #7B2D26;
+  color: #b89b72;
   letter-spacing: 0.6px;
 }
 
-/* BUTTON */
+/* ===============================
+   BUTTON
+================================= */
 
 .nonveg-btn {
-  background: #2F4F2F;
-  color: #fff;
-  border: none;
+  background: transparent;
+  color: #b89b72;
+  border: 1px solid #b89b72;
   padding: 10px 20px;
   border-radius: 30px;
   cursor: pointer;
@@ -163,40 +160,55 @@ body {
   width: 75%;
 }
 
+/* HOVER BUTTON */
 .nonveg-btn:hover {
-  background: #7B2D26;
+  background: #b89b72;
+  color: #000;
   letter-spacing: 1.4px;
 }
+
+/* ===============================
+   PAGINATION
+================================= */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin: 30px 0 50px 0;
+}
+
 .pagination button {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: #2F4F2F;
-  color: white;
-  border: none;
-  font-size: 15px;
-  cursor: pointer;
-  transition: 0.3s ease;
+  background: #111;
+  color: #b89b72;
+  border: 1px solid rgba(255,255,255,0.1);
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* hover */
+/* HOVER */
 .pagination button:hover {
-  background: #7B2D26;
+  background: #b89b72;
+  color: #000;
   transform: translateY(-2px);
 }
 
-/* active page */
+/* ACTIVE */
 .pagination button.active {
-  background: #D4AF37;
-  color: #2C2A28;
+  background: #b89b72;
+  color: #000;
   font-weight: bold;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
 }
+
 /* ===============================
-   RESPONSIVE DESIGN
+   RESPONSIVE
 ================================= */
 
 @media (max-width: 1100px) {
