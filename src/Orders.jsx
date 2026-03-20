@@ -68,12 +68,12 @@ function Orders() {
 
       </div>
 
-      <button
+      {/* <button
         className="clear-order-btn"
         onClick={() => dispatch(clearOrder())}
       >
         Clear Orders
-      </button>
+      </button> */}
 
     </div>
   );
