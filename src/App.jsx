@@ -9,7 +9,7 @@ import Error from './Error'
 import Order from './Orders'
 import { useSelector } from 'react-redux'
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Register from './register'
+import Register from './Register'
 import Login from './Login'
 import Msg from './Msg'
 import Diary from './Diary'
