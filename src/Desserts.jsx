@@ -54,7 +54,63 @@ const dessertItems = [
   price: 189,
   image: "./desert-8.jpg",
   desc: "A classic Italian treat — creamy vanilla gelato drowned in a shot of hot espresso for a perfect hot-cold contrast."
-}
+},
+  {
+    id: 9,
+    name: "Black Forest Cake",
+    price: 259,
+    image: "./dessert-9.jpg",
+    desc: "A German classic — layers of rich chocolate sponge, whipped cream, and cherries soaked in Kirsch."
+  },
+  {
+    id: 10,
+    name: "Opera Cake",
+    price: 269,
+    image: "./dessert-10.jpg",
+    desc: "Elegant French dessert with layers of almond sponge, coffee buttercream, and chocolate ganache."
+  },
+  {
+    id: 11,
+    name: "Eclair au Chocolat",
+    price: 229,
+    image: "./dessert-11.jpg",
+    desc: "Light choux pastry filled with silky chocolate cream and topped with glossy chocolate glaze."
+  },
+  {
+    id: 12,
+    name: "Apple Strudel",
+    price: 219,
+    image: "./dessert-12.jpg",
+    desc: "Traditional Austrian pastry filled with spiced apples, raisins, and wrapped in flaky golden layers."
+  },
+  {
+    id: 13,
+    name: "Basque Cheesecake",
+    price: 249,
+    image: "./dessert-13.jpg",
+    desc: "A rustic Spanish cheesecake with a caramelized top and creamy, slightly gooey center."
+  },
+  {
+    id: 14,
+    name: "Mille-Feuille",
+    price: 239,
+    image: "./dessert-14.jpg",
+    desc: "Classic French pastry with crisp puff pastry layers and smooth vanilla cream filling."
+  },
+  {
+    id: 15,
+    name: "Profiteroles",
+    price: 249,
+    image: "./dessert-15.jpg",
+    desc: "Delicate French choux puffs filled with cream and drizzled with warm chocolate sauce."
+  },
+  {
+    id: 16,
+    name: "Lemon Tart",
+    price: 229,
+    image: "./dessert-16.jpg",
+    desc: "A zesty French dessert featuring tangy lemon curd in a buttery, crisp pastry shell."
+  }
 ];
 let dispatch = useDispatch();
  const itemsPerPage=8;

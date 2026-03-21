@@ -53,7 +53,55 @@ const dairyItems = [
     price: 199,
     image: "./diary-8.jpg",
     desc: "Smooth latte infused with subtle vanilla flavor and creamy milk."
-  }
+  },
+  {
+  name: "Cortado",
+  price: 169,
+  image: "./diary-9.jpg",
+  desc: "Spanish espresso cut with an equal amount of warm milk for a balanced flavor."
+},
+{
+  name: "Ristretto",
+  price: 149,
+  image: "./diary-10.jpg",
+  desc: "Short, concentrated Italian espresso with a bold and intense taste."
+},
+{
+  name: "Affogato",
+  price: 209,
+  image: "./diary-11.jpg",
+  desc: "Classic Italian dessert drink with hot espresso poured over vanilla ice cream."
+},
+{
+  name: "Vienna Coffee",
+  price: 189,
+  image: "./diary-12.jpg",
+  desc: "Austrian-style coffee topped with whipped cream instead of milk."
+},
+{
+  name: "Irish Cream Latte",
+  price: 219,
+  image: "./diary-13.jpg",
+  desc: "Creamy latte infused with Irish cream flavor for a rich and smooth finish."
+},
+{
+  name: "Caramel Latte",
+  price: 199,
+  image: "./diary-14.jpg",
+  desc: "Espresso blended with steamed milk and sweet caramel syrup."
+},
+{
+  name: "Hot Milk with Honey",
+  price: 139,
+  image: "./diary-15.jpg",
+  desc: "Simple European-style warm milk sweetened with natural honey."
+},
+{
+  name: "White Hot Chocolate",
+  price: 209,
+  image: "./diary-16.jpg",
+  desc: "Creamy hot chocolate made with white chocolate for a smooth, sweet taste."
+}
 ];
 let dispatch = useDispatch();
  const itemsPerPage=8;
