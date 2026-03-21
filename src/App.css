@@ -1,168 +1,190 @@
 /* ===============================
-PAGE BACKGROUND
+PAGE
 ================================= */
 
 body {
-margin: 0;
-height: 200vh;
-font-family: "Playfair Display", serif;
-font-style: italic;
-color: #eaeaea;
-
-background: #000000; /* full black */
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  background: #000;
+  color: #eaeaea;
 }
 
 /* ===============================
-FLOATING NAVBAR (UPDATED DARK THEME)
+FLOATING NAV (CENTERED)
 ================================= */
 
 .floating-nav {
-position: sticky;
-top: 15px;
+  position: sticky;
+  top: 15px;
 
-margin: 0 auto;
-width: 75%;
-max-width: 950px;
+  margin: 0 auto;
+  width: 92%;
+  max-width: 1200px;
 
-display: flex;
-align-items: center;
-justify-content: center;
-flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
 
-padding: 12px 26px;
+  padding: 12px 20px;
 
-background: linear-gradient(
-135deg,
-rgba(20, 20, 20, 0.95),
-rgba(35, 35, 35, 0.9)
-);
+  background: linear-gradient(
+    135deg,
+    rgba(20, 20, 20, 0.95),
+    rgba(35, 35, 35, 0.9)
+  );
 
-backdrop-filter: blur(14px);
-border-radius: 45px;
+  backdrop-filter: blur(14px);
+  border-radius: 50px;
 
-box-shadow:
-0 10px 30px rgba(0,0,0,0.6),
-inset 0 0 8px rgba(255,255,255,0.05);
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.6),
+    inset 0 0 8px rgba(255,255,255,0.05);
 
-border: 1px solid rgba(212,175,55,0.25);
+  border: 1px solid rgba(212,175,55,0.25);
 
-z-index: 1000;
+  z-index: 1000;
 }
 
-/* gold highlight line */
-
+/* gold line */
 .floating-nav::before {
-content: "";
-position: absolute;
-top: 0;
-left: 10%;
-width: 80%;
-height: 2px;
-background: linear-gradient(to right, transparent, #D4AF37, transparent);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #D4AF37, transparent);
 }
 
 /* ===============================
-MENU CONTAINER
+NAV CONTENT
 ================================= */
 
 .floating-nav nav {
-display: flex;
-flex-wrap: nowrap;
-gap: 18px;
-align-items: center;
-white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px; /* balanced spacing */
+  flex-wrap: nowrap;
+
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.floating-nav nav::-webkit-scrollbar {
+  display: none;
 }
 
 /* ===============================
-LINKS (LIGHT TEXT)
+LINKS
 ================================= */
 
 .floating-nav a {
-text-decoration: none;
-color: #eaeaea;
-font-size: 14px;
-font-weight: 500;
-letter-spacing: 1px;
+  text-decoration: none;
+  color: #eaeaea;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
 
-display: flex;
-align-items: center;
-gap: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 
-position: relative;
-transition: all 0.3s ease;
-white-space: nowrap;
+  position: relative;
+  transition: all 0.3s ease;
+
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 /* hover */
-
 .floating-nav a:hover {
-color: #D4AF37;
-text-shadow: 0 0 8px rgba(212,175,55,0.4);
-letter-spacing: 1.2px;
+  color: #D4AF37;
+  text-shadow: 0 0 8px rgba(212,175,55,0.4);
 }
 
-/* underline animation */
-
+/* underline */
 .floating-nav a::after {
-content: "";
-position: absolute;
-width: 0;
-height: 2px;
-left: 0;
-bottom: -6px;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -6px;
 
-background: linear-gradient(to right, #D4AF37, #ffffff);
-transition: width 0.3s ease;
+  background: linear-gradient(to right, #D4AF37, #ffffff);
+  transition: width 0.3s ease;
 }
 
 .floating-nav a:hover::after {
-width: 100%;
+  width: 100%;
 }
 
 /* ===============================
-LOGOUT BUTTON (DARK STYLE)
+USER SECTION INLINE
+================================= */
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-left: 10px;
+  padding-left: 12px;
+
+  border-left: 1px solid rgba(212,175,55,0.2);
+
+  font-size: 13px;
+  color: #ddd;
+
+  white-space: nowrap;
+}
+
+/* ===============================
+LOGOUT BUTTON
 ================================= */
 
 .logout-btn {
-padding: 6px 16px;
-border-radius: 25px;
+  padding: 4px 12px;
+  border-radius: 18px;
 
-font-size: 13px;
-font-weight: 600;
-letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 600;
 
-color: #000;
-background: linear-gradient(135deg, #D4AF37, #f5d77a);
+  color: #000;
+  background: linear-gradient(135deg, #D4AF37, #f5d77a);
 
-border: none;
-cursor: pointer;
+  border: none;
+  cursor: pointer;
 
-display: flex;
-align-items: center;
-justify-content: center;
-
-box-shadow:
-0 4px 12px rgba(0,0,0,0.4),
-inset 0 0 4px rgba(255,255,255,0.3);
-
-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-
-/* hover */
 
 .logout-btn:hover {
-transform: translateY(-2px);
-background: linear-gradient(135deg, #e6c45a, #fff2a6);
-box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #e6c45a, #fff2a6);
 }
 
-/* user section */
+/* ===============================
+RESPONSIVE
+================================= */
 
-.user-section {
-display: flex;
-align-items: center;
-gap: 10px;
-font-size: 14px;
-font-weight: 500;
-color: #ddd;
+@media (max-width: 768px) {
+  .floating-nav {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .floating-nav nav {
+    gap: 14px;
+  }
+
+  .floating-nav a {
+    font-size: 12px;
+  }
+
+  .logout-btn {
+    font-size: 11px;
+  }
 }

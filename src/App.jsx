@@ -15,6 +15,8 @@ import Msg from './Msg'
 import Diary from './Diary'
 import Bevrage from './Beverage'
 import { useState, useEffect } from 'react'
+import AboutUs from './AboutUs'
+import ContactUs from './ContactUs'
 
 function App() {
 
@@ -51,6 +53,8 @@ function App() {
           <Link to="/desserts"> <i className="fa-solid fa-stroopwafel"></i> Desserts</Link>
           <Link to="/cart"> <i className="fa-solid fa-cart-shopping"></i> Cart {total}</Link>
           <Link to="/orders">Orders</Link>
+           <Link to="/AboutUs">AboutUs</Link>
+           <Link to="/ContactUs">ContactUs</Link>
 
           {currentUser ? (
             <span className="user-section">
@@ -81,6 +85,8 @@ function App() {
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
         <Route path='/Msg' element={<Msg />} />
+        <Route path='/AboutUs' element={<AboutUs />} />
+        <Route path='/ContactUs' element={<ContactUs />} />
         <Route path='*' element={<Error />} />
       </Routes>
     </>
