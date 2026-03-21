@@ -166,8 +166,18 @@ function Cart() {
           <div className="cart-left">
             <h1>Order List 📃</h1>
             <ul className="cart-grid">{listItems}</ul>
+              <button
+              className="cart-action-btn"
+              onClick={() => {
+                dispatch(clearCart());
+                dispatch(resetCoupon());
+                toast.error("You have cleared the cart!");
+              }}
+            >
+              Clear Cart
+            </button>
           </div>
-
+          
           {/* RIGHT SIDE */}
           <div className="cart-right">
             <h3>Order Summary</h3>
@@ -225,7 +235,7 @@ function Cart() {
 
             {/* Clear Cart */}
 
-            <button
+            {/* <button
               className="cart-action-btn"
               onClick={() => {
                 dispatch(clearCart());
@@ -234,7 +244,7 @@ function Cart() {
               }}
             >
               Clear Cart
-            </button>
+            </button> */}
 
             {/* Checkout start */}
 
