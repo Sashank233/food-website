@@ -52,9 +52,9 @@ function Home() {
     <img src="/diary-13.jpg" alt="" />
 
     {/* duplicate for smooth loop */}
-    <img src="/desert-11.jpg" alt="" />
-    <img src="/desert-10.jpg" alt="" />
-    <img src="/desert-9.jpg" alt="" />
+    <img src="/dessert-11.jpg" alt="" />
+    <img src="/dessert-10.jpg" alt="" />
+    <img src="/dessert-9.jpg" alt="" />
 
     <img src="/bev-10.jpg" alt="" />
     <img src="/bev-12.jpg" alt="" />
