@@ -53,7 +53,55 @@ const beverageItems = [
     price: 169,
     image: "./bev-8.jpg",
     desc: "Sparkling soda mixed with flavored syrup and ice."
-  }
+  },
+  {
+  name: "San Pellegrino Chinotto",
+  price: 169,
+  image: "./bev-9.jpg",
+  desc: "Italian bittersweet soft drink made from chinotto citrus fruit."
+},
+{
+  name: "Orzata",
+  price: 159,
+  image: "./bev-10.jpg",
+  desc: "Traditional Italian almond-flavored refreshing drink, slightly sweet and aromatic."
+},
+{
+  name: "Granita al Limone",
+  price: 179,
+  image: "./bev-11.jpg",
+  desc: "Sicilian semi-frozen lemon dessert drink, icy and intensely refreshing."
+},
+{
+  name: "Café Frappé",
+  price: 189,
+  image: "./bev-12.jpg",
+  desc: "Greek iced coffee made with instant coffee, water, sugar, and foam."
+},
+{
+  name: "Apfelschorle",
+  price: 159,
+  image: "./bev-13.jpg",
+  desc: "German refreshing drink made by mixing apple juice with sparkling water."
+},
+{
+  name: "Tinto de Verano",
+  price: 199,
+  image: "./bev-14.jpg",
+  desc: "Spanish chilled drink combining red wine with lemon soda."
+},
+{
+  name: "Elderflower Presse",
+  price: 179,
+  image: "./bev-15.jpg",
+  desc: "Popular European floral drink made with elderflower syrup and sparkling water."
+},
+{
+  name: "Hot Spiced Apple Juice",
+  price: 169,
+  image: "./bev-16.jpg",
+  desc: "Warm European-style apple drink infused with cinnamon and spices."
+}
 ];
 let dispatch = useDispatch();
  const itemsPerPage=8;
