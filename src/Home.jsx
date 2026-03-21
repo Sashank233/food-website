@@ -41,24 +41,24 @@ function Home() {
 
     <img src="/veg-1.jpg" alt="" />
     <img src="/veg-2.jpg" alt="" />
-   <img src="/bev-1.jpg" alt="" />
+   <img src="/bev-9.jpg" alt="" />
 
     <img src="/nonveg-7.jpg" alt="" />
     <img src="/NonVeg-2.jpg" alt="" />
     <img src="/NonVeg-3.jpg" alt="" />
 
-    <img src="/diary-1.jpg" alt="" />
-    <img src="/diary-2.jpg" alt="" />
-    <img src="/diary-3.jpg" alt="" />
+    <img src="/diary-11.jpg" alt="" />
+    <img src="/diary-12.jpg" alt="" />
+    <img src="/diary-13.jpg" alt="" />
 
     {/* duplicate for smooth loop */}
-    <img src="/desert-1.jpg" alt="" />
-    <img src="/desert-2.jpg" alt="" />
-    <img src="/desert-3.jpg" alt="" />
+    <img src="/desert-11.jpg" alt="" />
+    <img src="/desert-10.jpg" alt="" />
+    <img src="/desert-9.jpg" alt="" />
 
-    <img src="/bev-1.jpg" alt="" />
-    <img src="/bev-2.jpg" alt="" />
-    <img src="/bev-3.jpg" alt="" />
+    <img src="/bev-10.jpg" alt="" />
+    <img src="/bev-12.jpg" alt="" />
+    <img src="/bev-13.jpg" alt="" />
 
   </div>
 </section>
