@@ -71,6 +71,11 @@ function Home() {
     Taste slowly, savor deeply, and let every meal become a moment worth remembering.
   </p>
 </footer>
+<div className="footer-love">
+  <span className="line"></span>
+  <span className="tiamo">❤️ con amore ❤️</span>
+  <span className="line"></span>
+</div>
     </div>
   )
 }

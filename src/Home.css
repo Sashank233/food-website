@@ -189,15 +189,60 @@ html, body, #root {
   margin: 80px auto 40px;
   padding: 30px 20px;
   text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 0;
+  border-top: 3px solid #b89b72; /* gold line */
 }
-
 .food-footer p {
-  font-size: 1.05rem;
+  font-size: 1.2rem;  /* increased from 1.05rem */
   color: #cfcfcf;
-  line-height: 1.8;
+  line-height: 1.9;   /* slightly more spacing for readability */
   opacity: 0.9;
 }
+/* LOVE LINE */
+.footer-love {
+  position: relative;
+  margin-top: 5px;
+ transform: translateY(-12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* SIDE LINES */
+.footer-love .line {
+  width: 60px;
+  height: 1px;
+  background: #b89b72;
+  opacity: 0.6;
+}
+
+/* TEXT */
+.footer-love .tiamo {
+  font-size: 1.1rem;
+  color: #b89b72;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+/* GLOWING HEARTS */
+.footer-love .tiamo span,
+.footer-love .tiamo {
+  text-shadow: 
+    0 0 5px #ff4d6d,
+    0 0 10px #ff4d6d,
+    0 0 20px #ff4d6d;
+}
+
+/* GOLD SHINING LINE */
+
+
+/* ANIMATION */
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
